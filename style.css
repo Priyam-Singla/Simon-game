@@ -1,8 +1,7 @@
-/* Import a clean, modern font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-    background-color: #1a1a2e; /* Dark, sleek background */
+    background-color: #1a1a2e; 
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -21,7 +20,7 @@ h1 {
     letter-spacing: 3px;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
-    color: #f1c40f; /* Gives the title a nice arcade gold color */
+    color: #f1c40f; 
 }
 
 .head {
@@ -30,59 +29,57 @@ h1 {
     margin-bottom: 3rem;
 }
 
-/* --- Layout fixes for the 2x2 Grid --- */
+
 .btn-container {
     display: flex;
-    flex-direction: column; /* Stacks line-one on top of line-two */
+    flex-direction: column;
     align-items: center;
     gap: 1.5rem; 
 }
 
 .line-one, .line-two {
     display: flex;
-    gap: 1.5rem; /* Spaces the buttons evenly horizontally */
-}
+    gap: 1.5rem;
 
-/* --- Button Styling --- */
+
 .btn {
     height: 180px; 
     width: 180px;
-    border: 4px solid rgba(255, 255, 255, 0.1); /* Soft inner border */
+    border: 4px solid rgba(255, 255, 255, 0.1); 
     border-radius: 20%;
     
-    /* Center the numbers inside the buttons */
+  
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
     font-weight: bold;
-    color: rgba(0, 0, 0, 0.15); /* Makes the 1,2,3,4 subtle */
+    color: rgba(0, 0, 0, 0.15);
     
     cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 -5px 15px rgba(0,0,0,0.2); /* 3D depth */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4), inset 0 -5px 15px rgba(0,0,0,0.2);
     transition: transform 0.1s ease, filter 0.2s ease, box-shadow 0.1s ease;
 }
 
-/* Hover and Click Effects */
+
 .btn:hover {
-    filter: brightness(1.15); /* Lights up slightly on hover */
+    filter: brightness(1.15); 
 }
 
 .btn:active {
-    transform: translateY(4px) scale(0.96); /* Gives a physical "push" effect */
+    transform: translateY(4px) scale(0.96); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), inset 0 -2px 5px rgba(0,0,0,0.2);
 }
 
-/* --- Modern Colors --- */
-/* Replacing standard red/green with softer, modern UI tones */
+
 .red { background-color: #ff4757; }
 .yellow { background-color: #ffa502; }
 .green { background-color: #2ed573; }
 .purple { background-color: #9b59b6; }
 
-/* --- Enhanced Flash Animation --- */
+
 .flash {
     background-color: #ffffff;
-    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff; /* Adds a neon glow to the flash */
-    transform: scale(1.02); /* Pops out slightly when it flashes */
+    box-shadow: 0 0 20px #ffffff, 0 0 40px #ffffff; 
+    transform: scale(1.02); 
 }
